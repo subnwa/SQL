@@ -11,3 +11,4 @@ IF NOT EXISTS (
 CREATE DATABASE DatabaseMaster
 GO
 
+.
