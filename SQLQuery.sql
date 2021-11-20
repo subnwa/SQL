@@ -17,6 +17,10 @@ SELECT
     TableName = tbl.table_schema + '.' + tbl.table_name, 
     ColumnName = col.column_name, 
     ColumnDataType = col.data_type
+FROM INFORMATION_SCHEMA.TABLES tbl
+INNER JOIN INFORMATION_SCHEMA.COLUMNS col
+    ON col.table_name = tbl.table_name
+    AND col.table_schema = tbl.table_schema
 
 GO
 
