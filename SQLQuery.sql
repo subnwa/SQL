@@ -18,10 +18,16 @@ SELECT
     ColumnName = col.column_name, 
     ColumnDataType = col.data_type
 FROM INFORMATION_SCHEMA.TABLES tbl
-INNER JOIN INFORMATION_SCHEMA.COLUMNS col
+INNER JOIN INFORMATION_SCHEMA.COLUMNS col 
     ON col.table_name = tbl.table_name
     AND col.table_schema = tbl.table_schema
 
+WHERE tbl.table_type = 'base table' and tbl.table_name like '%TableName%'
+
+-- Get a list of tables and views in the current database
+SELECT table_catalog [database], table_schema [schema], table_name [name], table_type [type]
+FROM INFORMATION_SCHEMA.TABLES
+GO
 GO
 
 .
