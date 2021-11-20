@@ -9,6 +9,15 @@ IF NOT EXISTS (
         WHERE [name] = N'DatabaseMaster'
 )
 CREATE DATABASE DatabaseMaster
+
+-- Get a list of databases
+SELECT [name] FROM sys.databases
+NAMESPACE -- List columns in all tables whose name is like 'TableName'
+SELECT 
+    TableName = tbl.table_schema + '.' + tbl.table_name, 
+    ColumnName = col.column_name, 
+    ColumnDataType = col.data_type
+
 GO
 
 .
