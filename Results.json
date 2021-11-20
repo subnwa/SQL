@@ -1,0 +1,44 @@
+[
+  {
+    "database": "master",
+    "schema": "dbo",
+    "name": "spt_fallback_db",
+    "type": "BASE TABLE"
+  },
+  {
+    "database": "master",
+    "schema": "dbo",
+    "name": "spt_fallback_dev",
+    "type": "BASE TABLE"
+  },
+  {
+    "database": "master",
+    "schema": "dbo",
+    "name": "spt_fallback_usg",
+    "type": "BASE TABLE"
+  },
+  {
+    "database": "master",
+    "schema": "dbo",
+    "name": "testing table",
+    "type": "BASE TABLE"
+  },
+  {
+    "database": "master",
+    "schema": "dbo",
+    "name": "spt_values",
+    "type": "VIEW"
+  },
+  {
+    "database": "master",
+    "schema": "dbo",
+    "name": "spt_monitor",
+    "type": "BASE TABLE"
+  },
+  {
+    "database": "master",
+    "schema": "dbo",
+    "name": "MSreplication_options",
+    "type": "BASE TABLE"
+  }
+]
